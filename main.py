@@ -21,7 +21,7 @@ def main():
 
         if desfecho == 'vitoria':
             subiu = personagem.receber_xp(vilao.xp_recompensa)
-            personagem.gold += vilao.gold_recompensa  # ✅
+            personagem.gold += vilao.gold_recompensa
             personagem.vida = min(personagem.vida_max, personagem.vida + 30)
             exibir_vitoria(vilao, personagem)
             if subiu:
@@ -42,7 +42,7 @@ def main():
             exibir_fuga()
             return
 
-    exibir_vitoria_final(personagem)  # ✅
+    exibir_vitoria_final(personagem)
 
 
 def batalha(personagem, vilao):
